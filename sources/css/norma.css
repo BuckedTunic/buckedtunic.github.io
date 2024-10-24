@@ -1,3 +1,6 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 body {
     background-color: #f8f9fa;
     margin: 0;
@@ -6,6 +9,14 @@ body {
 }
 header {
     background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1%;
+    margin-bottom: 1%;
+    font-weight: bold;
+}
+h4{
+    background-color: grey;
     color: white;
     text-align: center;
     padding: 1%;
@@ -31,15 +42,8 @@ th {
 }
 
 .static-box {
-    background-color: #fff;
-    border: 1px solid #ced4da;
-    padding: 0.375rem 0.75rem;
-    border-radius: 0.25rem;
     overflow: hidden;
     width: 100%;
-}
-.narrow-select-doc, .narrow-select-idx{
-    overflow: auto;
 }
 .narrow-select-idx {
     width: fit-content;
@@ -50,6 +54,6 @@ th {
 .No{
     width: auto;
 }
-.contenido{
-    font-size: 90%;
+tr{
+    height: 2px;
 }
