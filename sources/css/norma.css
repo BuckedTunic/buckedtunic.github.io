@@ -40,7 +40,6 @@ th {
 .form-inline button {
     height: 40px;
 }
-
 .static-box {
     overflow: hidden;
     width: 100%;
@@ -51,9 +50,13 @@ th {
 .narrow-select-doc {
     width: 100%;
 }
-.No{
-    width: auto;
+.no{
+    width: 3rem;
 }
-tr{
-    height: 2px;
+.sub-8{
+    display: none;
+    background-color: gainsboro;
+}
+.clickable-row{
+    cursor: pointer;
 }
