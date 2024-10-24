@@ -1,1 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+p{
+    opacity: 75%;
+}
+
+.container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.norma, .sgc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    transition: flex 0.5s ease;
+    flex: 1;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+}
+
+.norma{
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+    ), url('../img/ISO.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.sgc{
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+    ), url('../img/SGC-PH.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.norma:hover{
+    flex: 2;
+}
+
+.sgc:hover{
+    flex: 2;
+}
+
+@media (max-width: 768px){
+    .container{
+        flex-direction: column;
+    }
+}
