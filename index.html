@@ -1,9 +1,27 @@
+<!DOCTYPE html>
 <html>
-
-<body>
-  <h1>Yael</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
-
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="sources\css\index.css">
+        <title>Norma & SGC</title>
+    </head>
+    <body>
+        <section class="container">
+            <div class="norma" onclick="redirectToNorma()">
+                <p>NORMA</p>
+            </div>
+            <div class="sgc" onclick="redirectToSGC()">
+                <p>SGC</p>
+            </div>
+        </section>
+        <script>
+            function redirectToNorma(){
+                window.location.href='norma.html';
+            };
+            function redirectToSGC(){
+                window.location.href='sgc.html'
+            };
+        </script>
+    </body>
 </html>
