@@ -27,7 +27,7 @@
                                     <th colspan="2">ÍNDICE</th>
                                 </tr>
                                 <tr>
-                                    <th class="No">Nº</th>
+                                    <th class="no">Nº</th>
                                     <th>TEMA</th>
                                 </tr>
                             </thead>
@@ -60,43 +60,43 @@
                                     <td>7</td>
                                     <td>Requisitos del proceso.</td>
                                 </tr>
-                                <tr>
+                                <tr class="clickable-row" id="row-8">
                                     <td>8</td>
                                     <td>Requisitos el sistema de gestión.</td>
                                 </tr>
-                                <tr>
+                                <tr class="sub-8">
                                     <td>8.1</td>
                                     <td>Opciones.</td>
                                 </tr>
-                                <tr>
+                                <tr class="sub-8">
                                     <td>8.2</td>
                                     <td>Documentación del sistema de gestión [Opción A]</td>
                                 </tr>
-                                <tr>
+                                <tr class="sub-8">
                                     <td>8.3</td>
                                     <td>Control de documentos del sistema de gestión [Opción A]</td>
                                 </tr>
-                                <tr>
+                                <tr class="sub-8">
                                     <td>8.4</td>
                                     <td>Control de registros [Opción A]</td>
                                 </tr>
-                                <tr>
+                                <tr class="sub-8">
                                     <td>8.5</td>
                                     <td>Acciones para abordar riesgos y oportunidades [Opción A]</td>
                                 </tr>
-                                <tr>
+                                <tr class="sub-8">
                                     <td>8.6</td>
                                     <td>Mejora [Opción A]</td>
                                 </tr>
-                                <tr>
+                                <tr class="sub-8">
                                     <td>8.7</td>
                                     <td>Acciones correctivas [Opción A]</td>
                                 </tr>
-                                <tr>
+                                <tr class="sub-8">
                                     <td>8.8</td>
                                     <td>Auditorías internas [Opción A]</td>
                                 </tr>
-                                <tr>
+                                <tr class="sub-8">
                                     <td>8.9</td>
                                     <td>Revisiones por las dirección [Opción A]</td>
                                 </tr>
@@ -195,11 +195,11 @@
                                     <ul>
                                         <li>PROCEDIMIENTOS</li>
                                         <ul>
-                                            <li>PA-08 Procedimientopara revisión de la dirección  Punto 6.6 al 6.1.11 Pág. 5 y 6/7</li>
-                                            <li>RA-08.1 revisión por la dirección</li>
-                                            <li>PA-05 Procedimientode acciones correctivas Puntos.6.6.1 al 6.6.2, 6.10.2 Pág. 4 y 5/9</li>
-                                            <li>PA-04 Procedimientode control de trabajo no conforme  Puntos 6.2.la 6.6 Pág. 3 a la 4/6</li>
-                                            <li>RA-17.2Planteamiento de objetivos </li>
+                                            <li>PA-08 Procedimientopara revisión de la dirección  Punto 6.6 al 6.1.11 Pág. 5 y 6/7.</li>
+                                            <li>RA-08.1 revisión por la dirección.</li>
+                                            <li>PA-05 Procedimientode acciones correctivas Puntos.6.6.1 al 6.6.2, 6.10.2 Pág. 4 y 5/9.</li>
+                                            <li>PA-04 Procedimientode control de trabajo no conforme  Puntos 6.2.la 6.6 Pág. 3 a la 4/6.</li>
+                                            <li>RA-17.2 Planteamiento de objetivos.</li>
                                         </ul>
                                     </ul>
                                 </p>
@@ -220,7 +220,17 @@
             </div>
         </div>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('row-8').addEventListener('click', function(){
+            var rows = document.querySelectorAll('.sub-8');
+            rows.forEach(function(row){
+                if(row.style.display === 'none'){
+                    row.style.display = 'table-row';
+                } else {
+                    row.style.display = 'none'
+                }
+            });
+        });
+    </script>
 </body>
 </html>
